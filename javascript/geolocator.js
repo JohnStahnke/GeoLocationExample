@@ -34,6 +34,7 @@ function exportPosition(position) {
  
     // Insert the google maps iframe and change the location using the variables returned from the API
     jQuery('#map').html('<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;ll='+latitude+','+longitude+'&amp;spn=0.332359,0.617294&amp;t=m&amp;z=11&amp;output=embed"></iframe>');
+    jQuery('#map2').html('<img src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&center='+latitude+','+longitude+'&zoom=16&markers=color:yellow|'+latitude+','+longitude+'" />')
     longitudediv.html('Longitude: '+longitude);
     lattitudediv.html('Latitude: '+latitude);
     
